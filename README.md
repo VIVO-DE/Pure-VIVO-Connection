@@ -1,5 +1,4 @@
 # Pure-VIVO-Connection
-
 Es handelt sich um eine prototypische Anbindung Pures an VIVO. Sie besteht aus einer Modellierung des Mappings des Pure-Datenmodells auf die VIVO-Ontologien und einem Shell-Skript, welches die Prozessierung der Daten von Pure nach VIVO steuert. Für die Transformation aus dem Pure-eigenen XML-Format nach RDF kommt das Tool [Karma](http://usc-isi-i2.github.io/karma/) zum Einsatz. Aufgrund unterschiedlicher Probleme (siehe unten) sind die Daten nur rudimentär gemappt.
 
 # Bestandteile:
@@ -22,9 +21,9 @@ Die Daten werden
 
 # Konfiguration:
 1. Vorbereitung: 
-	- Karma Webservices im Tomcat bereitstellen: https://github.com/usc-isi-i2/Web-Karma/tree/master/karma-web-services/web-services-rdf
+	- Karma Webservices im Tomcat bereitstellen: siehe [Doku](https://github.com/usc-isi-i2/Web-Karma/tree/master/karma-web-services/web-services-rdf)
 	- Skript & Models auf den Server kopieren: /usr/local/VIVO
-2. SPARQL-Endpoint in VIVO aktivieren: https://wiki.duraspace.org/display/VIVODOC19x/SPARQL+Update+API#SPARQLUpdateAPI-EnablingtheAPI
+2. SPARQL-Endpoint in VIVO aktivieren: siehe [Doku](https://wiki.duraspace.org/display/VIVODOC19x/SPARQL+Update+API#SPARQLUpdateAPI-EnablingtheAPI)
 3. Cronjob zur regelmäßigen Ausführung des Update-Skripts konfigurieren
 
 # Probleme:
