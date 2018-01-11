@@ -24,7 +24,8 @@ Die Daten werden
 	- Karma Webservices im Tomcat bereitstellen: siehe [Doku](https://github.com/usc-isi-i2/Web-Karma/tree/master/karma-web-services/web-services-rdf)
 	- Skript & Models auf den Server kopieren: /usr/local/VIVO
 2. SPARQL-Endpoint in VIVO aktivieren: siehe [Doku](https://wiki.duraspace.org/display/VIVODOC19x/SPARQL+Update+API#SPARQLUpdateAPI-EnablingtheAPI)
-3. Cronjob zur regelmäßigen Ausführung des Update-Skripts konfigurieren
+3. Konfiguration im Kopf des Update-Skriptes anpassen
+4. Cronjob zur regelmäßigen Ausführung des Update-Skripts konfigurieren
 
 # Probleme:
 ## Variables Datenmodell
