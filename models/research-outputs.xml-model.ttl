@@ -1,0 +1,2056 @@
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix aktp: <http://www.aktors.org/ontology/portal#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vivoc: <http://vivo.library.cornell.edu/ns/0.1#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix wcmc: <http://weill.cornell.edu/vivo/ontology/wcmc#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix socsci: <http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix far: <http://vitro.mannlib.cornell.edu/ns/reporting#> .
+@prefix vivo-de: <http://vivoweb.org/ontology/de#> .
+@prefix ns1: <http://purl.org/net/OCRe/study_protocol.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ocrer: <http://purl.org/net/OCRe/research.owl#> .
+@prefix pubmed: <http://vitro.mannlib.cornell.edu/ns/pubmed#> .
+@prefix owl-time: <http://www.w3.org/2006/time#> .
+@prefix wos: <http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix app: <http://eagle-i.org/ont/app/1.0/> .
+@prefix timeline: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix config: <http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#> .
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ns2: <http://purl.org/net/OCRe/statistics.owl#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix ocresd: <http://purl.org/net/OCRe/study_design.owl#> .
+@prefix sce: <http://vivoweb.org/ontology/SchoolOfContinuingEducation#> .
+@prefix stars: <http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix hr: <http://vivo.cornell.edu/ns/hr/0.9/hr.owl#> .
+@prefix local: <http://vivo.cornell.edu/ontology/local#> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix ns3: <http://www.w3.org/2008/05/skos#> .
+@prefix wn: <http://xmlns.com/wordnet/1.6/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix aka: <http://vivoweb.org/ontology/aka#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix cce: <http://vivoweb.org/ontology/cornell-cooperative-extension#> .
+@prefix mann: <http://vivo.cornell.edu/ns/mannadditions/0.1#> .
+@prefix ai: <http://vivoweb.org/ontology/activity-insight#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix ospcu: <http://vivoweb.org/ontology/cu-vivo-osp#> .
+@prefix pim: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1c3ir3ugex1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "research-outputs_tmp.xml" ;
+	km-dev:modelPublicationTime "1515682134542"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "research-outputs_tmp.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"https://fis.tu-dresden.de/vivo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"uuid\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"publicationID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"publication/\\\" + getValue(\\\"uuid\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"publicationID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"id\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"authorshipID_internal\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"internalID = getValueFromNestedColumnByIndex(\\\"person\\\", \\\"uuid\\\", 0)\\n\\nif \\\"\\\" == internalID:\\n    return \\\"\\\"\\nelse:\\n    return \\\"authorship/\\\"+internalID + \\\"_\\\" + getValue(\\\"uuid\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"person\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"authorshipID_internal\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"authorshipID_internal\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"authorshipID_external\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"externalID = getValueFromNestedColumnByIndex(\\\"externalPerson\\\", \\\"uuid\\\", 0)\\n\\nif \\\"\\\" == externalID:\\n    return \\\"\\\"\\nelse:\\n    return \\\"authorship/\\\"+externalID + \\\"_\\\" + getValue(\\\"uuid\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"authorshipID_external\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"person\"},
+                    {\"columnName\": \"uuid\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"personID_internal\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"personID = getValue(\\\"uuid\\\")\\n\\nif \\\"\\\" == personID:\\n    return \\\"\\\"\\nelse:\\n    return \\\"person/\\\" + personID\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"person\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"person\\\"},{\\\"columnName\\\":\\\"personID_internal\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"externalPerson\"},
+                    {\"columnName\": \"uuid\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"personID_external\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"personID = getValue(\\\"uuid\\\")\\n\\nif \\\"\\\" == personID:\\n    return \\\"\\\"\\nelse:\\n    return \\\"person/\\\" + personID\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"personID_external\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"submissionYear\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"dateID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"date/\\\" + getValue(\\\"submissionYear\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"submissionYear\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"dateID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"dateID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"yearPrecision\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"http://vivoweb.org/ontology/core#yearPrecision\\\"\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"yearPrecision\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://localhost:8080/source/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"publicationID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://purl.org/ontology/bibo/Document\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://purl.org/ontology/bibo/Document1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://purl.org/ontology/bibo/Document\",
+                    \"DomainId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"bibo:Document1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"publicationID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"publicationID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"title\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://purl.org/ontology/bibo/Document\",
+                    \"DomainId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"bibo:Document1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"volume\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://purl.org/ontology/bibo/Document\",
+                    \"DomainId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/ontology/bibo/volume\",
+                    \"DomainLabel\": \"bibo:Document1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"volume\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"volume\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"authorshipID_internal\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#Authorship\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#Authorship1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#Authorship\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#Authorship1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:Authorship1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"authorshipID_internal\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"authorshipID_internal\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"authorshipID_external\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#Authorship\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#Authorship2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#Authorship\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#Authorship2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:Authorship2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"authorshipID_external\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"authorshipID_external\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"externalPerson\"},
+                    {\"columnName\": \"personID_external\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Person\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Person1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Person1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"personID_external\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"personID_external\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"externalPerson\"},
+                    {\"columnName\": \"name\"},
+                    {\"columnName\": \"content\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/name\",
+                    \"DomainLabel\": \"foaf:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"content\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"externalPerson\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"content\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"personAssociations\"},
+                    {\"columnName\": \"personAssociation\"},
+                    {\"columnName\": \"person\"},
+                    {\"columnName\": \"personID_internal\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#FacultyMember\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#FacultyMember1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#FacultyMember\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#FacultyMember1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:FacultyMember1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"person\\\"},{\\\"columnName\\\":\\\"personID_internal\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"personAssociations\\\"},{\\\"columnName\\\":\\\"personAssociation\\\"},{\\\"columnName\\\":\\\"person\\\"},{\\\"columnName\\\":\\\"personID_internal\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"placeOfPublication\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://purl.org/ontology/bibo/Document\",
+                    \"DomainId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://vivoweb.org/ontology/core#placeOfPublication\",
+                    \"DomainLabel\": \"bibo:Document1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"placeOfPublication\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"placeOfPublication\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"numberOfPages\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://purl.org/ontology/bibo/Document\",
+                    \"DomainId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/ontology/bibo/numPages\",
+                    \"DomainLabel\": \"bibo:Document1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"numberOfPages\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"numberOfPages\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"dateID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:DateTimeValue1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"dateID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"dateID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"submissionYear\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"vivo:DateTimeValue1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"submissionYear\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"submissionYear\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"otherContribution\"},
+                    {\"columnName\": \"yearPrecision\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValuePrecision\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValuePrecision1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValuePrecision\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValuePrecision1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:DateTimeValuePrecision1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"yearPrecision\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"otherContribution\\\"},{\\\"columnName\\\":\\\"yearPrecision\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#Authorship1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#relatedBy\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#Authorship\",
+                    \"edgeSourceId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"edgeSourceUri\": \"http://purl.org/ontology/bibo/Document\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#Authorship2\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#relatedBy\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#Authorship\",
+                    \"edgeSourceId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"edgeSourceUri\": \"http://purl.org/ontology/bibo/Document\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#FacultyMember1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#relates\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#FacultyMember\",
+                    \"edgeSourceId\": \"http://vivoweb.org/ontology/core#Authorship1\",
+                    \"edgeSourceUri\": \"http://vivoweb.org/ontology/core#Authorship\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#relates\",
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"edgeSourceId\": \"http://vivoweb.org/ontology/core#Authorship2\",
+                    \"edgeSourceUri\": \"http://vivoweb.org/ontology/core#Authorship\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#DateTimeValuePrecision1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#dateTimePrecision\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#DateTimeValuePrecision\",
+                    \"edgeSourceId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"edgeSourceUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#dateTime\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"edgeSourceId\": \"http://purl.org/ontology/bibo/Document1\",
+                    \"edgeSourceUri\": \"http://purl.org/ontology/bibo/Document\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex2 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex2 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:logicalTable _:node1c3ir3ugex2 ;
+	rr:subjectMap _:node1c3ir3ugex3 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex3 .
+
+_:node1c3ir3ugex3 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://purl.org/ontology/bibo/Document1" ;
+	rr:class bibo:Document ;
+	rr:template "publication/{[\"result\",\"otherContribution\",\"uuid\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_cf93c4bc-5256-4026-87b5-0e23578c62a5 rr:predicate rdfs:label .
+
+_:node1c3ir3ugex4 rr:column "[\"result\",\"otherContribution\",\"title\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap _:node1c3ir3ugex4 .
+
+km-dev:PredicateObjectMap_cf93c4bc-5256-4026-87b5-0e23578c62a5 rr:objectMap _:node1c3ir3ugex4 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_cf93c4bc-5256-4026-87b5-0e23578c62a5 .
+
+km-dev:PredicateObjectMap_cf93c4bc-5256-4026-87b5-0e23578c62a5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cf93c4bc-5256-4026-87b5-0e23578c62a5 .
+
+km-dev:PredicateObjectMap_85b0c80f-60c8-4cbc-bc7d-dbaec9326650 rr:predicate bibo:volume .
+
+_:node1c3ir3ugex5 rr:column "[\"result\",\"otherContribution\",\"volume\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap _:node1c3ir3ugex5 .
+
+km-dev:PredicateObjectMap_85b0c80f-60c8-4cbc-bc7d-dbaec9326650 rr:objectMap _:node1c3ir3ugex5 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_85b0c80f-60c8-4cbc-bc7d-dbaec9326650 .
+
+km-dev:PredicateObjectMap_85b0c80f-60c8-4cbc-bc7d-dbaec9326650 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_85b0c80f-60c8-4cbc-bc7d-dbaec9326650 .
+
+km-dev:PredicateObjectMap_34d799d9-278b-42b2-81e1-d3bedb01de9a rr:predicate vivo:relatedBy .
+
+km-dev:RefObjectMap_eec7923f-0be6-4ce3-a7b5-116eb2d038ad a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_aa978ca3-4aef-409a-b927-ac93b2ca16f1 ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap km-dev:RefObjectMap_eec7923f-0be6-4ce3-a7b5-116eb2d038ad .
+
+km-dev:PredicateObjectMap_34d799d9-278b-42b2-81e1-d3bedb01de9a rr:objectMap km-dev:RefObjectMap_eec7923f-0be6-4ce3-a7b5-116eb2d038ad .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_34d799d9-278b-42b2-81e1-d3bedb01de9a .
+
+km-dev:PredicateObjectMap_34d799d9-278b-42b2-81e1-d3bedb01de9a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_34d799d9-278b-42b2-81e1-d3bedb01de9a .
+
+km-dev:PredicateObjectMap_724962bf-3f2c-4fd7-90ab-5a910c54566a rr:predicate vivo:placeOfPublication .
+
+_:node1c3ir3ugex6 rr:column "[\"result\",\"otherContribution\",\"placeOfPublication\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap _:node1c3ir3ugex6 .
+
+km-dev:PredicateObjectMap_724962bf-3f2c-4fd7-90ab-5a910c54566a rr:objectMap _:node1c3ir3ugex6 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_724962bf-3f2c-4fd7-90ab-5a910c54566a .
+
+km-dev:PredicateObjectMap_724962bf-3f2c-4fd7-90ab-5a910c54566a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_724962bf-3f2c-4fd7-90ab-5a910c54566a .
+
+km-dev:PredicateObjectMap_4ad7d3ad-d5ca-4980-88d2-c9846f0e6b1c rr:predicate vivo:relatedBy .
+
+km-dev:RefObjectMap_7c4e44ac-372d-4e9d-b2f5-70dd15c85014 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a7b771a7-ca92-4aca-a957-4c82c858ae0b ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap km-dev:RefObjectMap_7c4e44ac-372d-4e9d-b2f5-70dd15c85014 .
+
+km-dev:PredicateObjectMap_4ad7d3ad-d5ca-4980-88d2-c9846f0e6b1c rr:objectMap km-dev:RefObjectMap_7c4e44ac-372d-4e9d-b2f5-70dd15c85014 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_4ad7d3ad-d5ca-4980-88d2-c9846f0e6b1c .
+
+km-dev:PredicateObjectMap_4ad7d3ad-d5ca-4980-88d2-c9846f0e6b1c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4ad7d3ad-d5ca-4980-88d2-c9846f0e6b1c .
+
+km-dev:PredicateObjectMap_ce7777c4-bab0-4a55-9507-446c97e2fa7f rr:predicate vivo:dateTime .
+
+km-dev:RefObjectMap_5a3507ae-9180-42e8-813b-979012b7d885 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap km-dev:RefObjectMap_5a3507ae-9180-42e8-813b-979012b7d885 .
+
+km-dev:PredicateObjectMap_ce7777c4-bab0-4a55-9507-446c97e2fa7f rr:objectMap km-dev:RefObjectMap_5a3507ae-9180-42e8-813b-979012b7d885 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_ce7777c4-bab0-4a55-9507-446c97e2fa7f .
+
+km-dev:PredicateObjectMap_ce7777c4-bab0-4a55-9507-446c97e2fa7f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ce7777c4-bab0-4a55-9507-446c97e2fa7f .
+
+km-dev:PredicateObjectMap_6cd0f1de-565e-4785-b6a9-436e86afa4dd rr:predicate bibo:numPages .
+
+_:node1c3ir3ugex7 rr:column "[\"result\",\"otherContribution\",\"numberOfPages\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap _:node1c3ir3ugex7 .
+
+km-dev:PredicateObjectMap_6cd0f1de-565e-4785-b6a9-436e86afa4dd rr:objectMap _:node1c3ir3ugex7 .
+
+km-dev:TriplesMap_4aa92a7a-8c4e-4bf1-8c9c-268fce6785bd rr:predicateObjectMap km-dev:PredicateObjectMap_6cd0f1de-565e-4785-b6a9-436e86afa4dd .
+
+km-dev:PredicateObjectMap_6cd0f1de-565e-4785-b6a9-436e86afa4dd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6cd0f1de-565e-4785-b6a9-436e86afa4dd .
+
+km-dev:TriplesMap_aa978ca3-4aef-409a-b927-ac93b2ca16f1 a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_aa978ca3-4aef-409a-b927-ac93b2ca16f1 .
+
+km-dev:TriplesMap_aa978ca3-4aef-409a-b927-ac93b2ca16f1 km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex8 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex8 .
+
+km-dev:TriplesMap_aa978ca3-4aef-409a-b927-ac93b2ca16f1 rr:logicalTable _:node1c3ir3ugex8 ;
+	rr:subjectMap _:node1c3ir3ugex9 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex9 .
+
+_:node1c3ir3ugex9 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#Authorship2" ;
+	rr:class vivo:Authorship ;
+	rr:template "{[\"result\",\"otherContribution\",\"personAssociations\",\"personAssociation\",\"authorshipID_external\"]}" .
+
+km-dev:PredicateObjectMap_998b71f9-97d9-4844-a9b2-e3422c71d9c8 rr:predicate vivo:relates .
+
+km-dev:RefObjectMap_c9061cb6-11ff-466c-b1e8-2fc1e2e2dd91 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_bfffd000-dffb-4a35-9984-a03867f4bee1 ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap km-dev:RefObjectMap_c9061cb6-11ff-466c-b1e8-2fc1e2e2dd91 .
+
+km-dev:PredicateObjectMap_998b71f9-97d9-4844-a9b2-e3422c71d9c8 rr:objectMap km-dev:RefObjectMap_c9061cb6-11ff-466c-b1e8-2fc1e2e2dd91 .
+
+km-dev:TriplesMap_aa978ca3-4aef-409a-b927-ac93b2ca16f1 rr:predicateObjectMap km-dev:PredicateObjectMap_998b71f9-97d9-4844-a9b2-e3422c71d9c8 .
+
+km-dev:PredicateObjectMap_998b71f9-97d9-4844-a9b2-e3422c71d9c8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_998b71f9-97d9-4844-a9b2-e3422c71d9c8 .
+
+km-dev:TriplesMap_a7b771a7-ca92-4aca-a957-4c82c858ae0b a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_a7b771a7-ca92-4aca-a957-4c82c858ae0b .
+
+km-dev:TriplesMap_a7b771a7-ca92-4aca-a957-4c82c858ae0b km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex10 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex10 .
+
+km-dev:TriplesMap_a7b771a7-ca92-4aca-a957-4c82c858ae0b rr:logicalTable _:node1c3ir3ugex10 ;
+	rr:subjectMap _:node1c3ir3ugex11 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex11 .
+
+_:node1c3ir3ugex11 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#Authorship1" ;
+	rr:class vivo:Authorship ;
+	rr:template "{[\"result\",\"otherContribution\",\"personAssociations\",\"personAssociation\",\"authorshipID_internal\"]}" .
+
+km-dev:PredicateObjectMap_2131958f-6d24-45a3-9978-1b08a95eab86 rr:predicate vivo:relates .
+
+km-dev:RefObjectMap_904a0876-c4a9-4a3a-b280-d664873dc341 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_8fe63d0a-1df0-4fdd-b344-8e0210788bd7 ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap km-dev:RefObjectMap_904a0876-c4a9-4a3a-b280-d664873dc341 .
+
+km-dev:PredicateObjectMap_2131958f-6d24-45a3-9978-1b08a95eab86 rr:objectMap km-dev:RefObjectMap_904a0876-c4a9-4a3a-b280-d664873dc341 .
+
+km-dev:TriplesMap_a7b771a7-ca92-4aca-a957-4c82c858ae0b rr:predicateObjectMap km-dev:PredicateObjectMap_2131958f-6d24-45a3-9978-1b08a95eab86 .
+
+km-dev:PredicateObjectMap_2131958f-6d24-45a3-9978-1b08a95eab86 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2131958f-6d24-45a3-9978-1b08a95eab86 .
+
+km-dev:TriplesMap_bfffd000-dffb-4a35-9984-a03867f4bee1 a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_bfffd000-dffb-4a35-9984-a03867f4bee1 .
+
+km-dev:TriplesMap_bfffd000-dffb-4a35-9984-a03867f4bee1 km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex12 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex12 .
+
+km-dev:TriplesMap_bfffd000-dffb-4a35-9984-a03867f4bee1 rr:logicalTable _:node1c3ir3ugex12 ;
+	rr:subjectMap _:node1c3ir3ugex13 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex13 .
+
+_:node1c3ir3ugex13 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Person1" ;
+	rr:class foaf:Person ;
+	rr:template "{[\"result\",\"otherContribution\",\"personAssociations\",\"personAssociation\",\"externalPerson\",\"personID_external\"]}" .
+
+km-dev:PredicateObjectMap_0d683aa0-731f-4d07-8f91-74d120719add rr:predicate foaf:name .
+
+_:node1c3ir3ugex14 rr:column "[\"result\",\"otherContribution\",\"personAssociations\",\"personAssociation\",\"externalPerson\",\"name\",\"content\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap _:node1c3ir3ugex14 .
+
+km-dev:PredicateObjectMap_0d683aa0-731f-4d07-8f91-74d120719add rr:objectMap _:node1c3ir3ugex14 .
+
+km-dev:TriplesMap_bfffd000-dffb-4a35-9984-a03867f4bee1 rr:predicateObjectMap km-dev:PredicateObjectMap_0d683aa0-731f-4d07-8f91-74d120719add .
+
+km-dev:PredicateObjectMap_0d683aa0-731f-4d07-8f91-74d120719add a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0d683aa0-731f-4d07-8f91-74d120719add .
+
+km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 .
+
+km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex15 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex15 .
+
+km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 rr:logicalTable _:node1c3ir3ugex15 ;
+	rr:subjectMap _:node1c3ir3ugex16 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex16 .
+
+_:node1c3ir3ugex16 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#DateTimeValue1" ;
+	rr:class vivo:DateTimeValue ;
+	rr:template "date/{[\"result\",\"otherContribution\",\"submissionYear\"]}" .
+
+km-dev:PredicateObjectMap_3ae7ffaa-976c-429d-9d4d-042c3fbaf842 rr:predicate vivo:dateTimePrecision .
+
+km-dev:RefObjectMap_90444641-49ba-44aa-ba23-69a93b5b5e68 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_81a17ff9-9bd3-4207-b20e-2c79c55a16d2 ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap km-dev:RefObjectMap_90444641-49ba-44aa-ba23-69a93b5b5e68 .
+
+km-dev:PredicateObjectMap_3ae7ffaa-976c-429d-9d4d-042c3fbaf842 rr:objectMap km-dev:RefObjectMap_90444641-49ba-44aa-ba23-69a93b5b5e68 .
+
+km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 rr:predicateObjectMap km-dev:PredicateObjectMap_3ae7ffaa-976c-429d-9d4d-042c3fbaf842 .
+
+km-dev:PredicateObjectMap_3ae7ffaa-976c-429d-9d4d-042c3fbaf842 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3ae7ffaa-976c-429d-9d4d-042c3fbaf842 .
+
+km-dev:PredicateObjectMap_603628b1-b1d2-42b6-a9b3-f6008f0acd9d rr:predicate rdfs:label .
+
+_:node1c3ir3ugex17 rr:column "[\"result\",\"otherContribution\",\"submissionYear\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasObjectMap _:node1c3ir3ugex17 .
+
+km-dev:PredicateObjectMap_603628b1-b1d2-42b6-a9b3-f6008f0acd9d rr:objectMap _:node1c3ir3ugex17 .
+
+km-dev:TriplesMap_34471ec8-e736-4c5d-b5a0-e22a65070846 rr:predicateObjectMap km-dev:PredicateObjectMap_603628b1-b1d2-42b6-a9b3-f6008f0acd9d .
+
+km-dev:PredicateObjectMap_603628b1-b1d2-42b6-a9b3-f6008f0acd9d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_603628b1-b1d2-42b6-a9b3-f6008f0acd9d .
+
+km-dev:TriplesMap_81a17ff9-9bd3-4207-b20e-2c79c55a16d2 a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_81a17ff9-9bd3-4207-b20e-2c79c55a16d2 .
+
+km-dev:TriplesMap_81a17ff9-9bd3-4207-b20e-2c79c55a16d2 km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex18 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex18 .
+
+km-dev:TriplesMap_81a17ff9-9bd3-4207-b20e-2c79c55a16d2 rr:logicalTable _:node1c3ir3ugex18 ;
+	rr:subjectMap _:node1c3ir3ugex19 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex19 .
+
+_:node1c3ir3ugex19 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#DateTimeValuePrecision1" ;
+	rr:class vivo:DateTimeValuePrecision ;
+	rr:template "{[\"result\",\"otherContribution\",\"yearPrecision\"]}" .
+
+km-dev:TriplesMap_8fe63d0a-1df0-4fdd-b344-8e0210788bd7 a rr:TriplesMap .
+
+_:node1c3ir3ugex1 km-dev:hasTriplesMap km-dev:TriplesMap_8fe63d0a-1df0-4fdd-b344-8e0210788bd7 .
+
+km-dev:TriplesMap_8fe63d0a-1df0-4fdd-b344-8e0210788bd7 km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex20 rr:tableName "research-outputs_tmp.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3ir3ugex1 .
+
+_:node1c3ir3ugex1 km-dev:hasLogicalTable _:node1c3ir3ugex20 .
+
+km-dev:TriplesMap_8fe63d0a-1df0-4fdd-b344-8e0210788bd7 rr:logicalTable _:node1c3ir3ugex20 ;
+	rr:subjectMap _:node1c3ir3ugex21 .
+
+_:node1c3ir3ugex1 km-dev:hasSubjectMap _:node1c3ir3ugex21 .
+
+_:node1c3ir3ugex21 km-dev:isPartOfMapping _:node1c3ir3ugex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#FacultyMember1" ;
+	rr:class vivo:FacultyMember ;
+	rr:template "{[\"result\",\"otherContribution\",\"personAssociations\",\"personAssociation\",\"person\",\"personID_internal\"]}" .

@@ -1,0 +1,1649 @@
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix aktp: <http://www.aktors.org/ontology/portal#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vivoc: <http://vivo.library.cornell.edu/ns/0.1#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix wcmc: <http://weill.cornell.edu/vivo/ontology/wcmc#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix socsci: <http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix far: <http://vitro.mannlib.cornell.edu/ns/reporting#> .
+@prefix vivo-de: <http://vivoweb.org/ontology/de#> .
+@prefix ns1: <http://purl.org/net/OCRe/study_protocol.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ocrer: <http://purl.org/net/OCRe/research.owl#> .
+@prefix pubmed: <http://vitro.mannlib.cornell.edu/ns/pubmed#> .
+@prefix owl-time: <http://www.w3.org/2006/time#> .
+@prefix wos: <http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix app: <http://eagle-i.org/ont/app/1.0/> .
+@prefix timeline: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix config: <http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#> .
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ns2: <http://purl.org/net/OCRe/statistics.owl#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix ocresd: <http://purl.org/net/OCRe/study_design.owl#> .
+@prefix sce: <http://vivoweb.org/ontology/SchoolOfContinuingEducation#> .
+@prefix stars: <http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix hr: <http://vivo.cornell.edu/ns/hr/0.9/hr.owl#> .
+@prefix local: <http://vivo.cornell.edu/ontology/local#> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix ns3: <http://www.w3.org/2008/05/skos#> .
+@prefix wn: <http://xmlns.com/wordnet/1.6/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix aka: <http://vivoweb.org/ontology/aka#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix cce: <http://vivoweb.org/ontology/cornell-cooperative-extension#> .
+@prefix mann: <http://vivo.cornell.edu/ns/mannadditions/0.1#> .
+@prefix ai: <http://vivoweb.org/ontology/activity-insight#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix ospcu: <http://vivoweb.org/ontology/cu-vivo-osp#> .
+@prefix pim: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1c3iqh1qrx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "organisational-units.xml" ;
+	km-dev:modelPublicationTime "1515681515355"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "organisational-units.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"https://fis-dev.mz.tu-dresden.de/vivo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"name\"},
+                    {\"columnName\": \"locale\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"labelDE\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"if \\\"de_DE\\\" == getValue(\\\"locale\\\"):\\n    return getValue(\\\"content\\\")\\nelse:\\n    return \\\"\\\"\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"content\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"locale\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"labelDE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"startDate\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"period-ID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"startDate\\\") + \\\"_\\\" + getValue(\\\"endDate\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"period-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"startDate\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"startDate-ID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"startDate\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"endDate\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"endDate-ID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"endDate\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"https://fis.tu-dresden.de/vivo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"uuid\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"orgUnitID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"org-unit/\\\" + getValue(\\\"uuid\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"orgUnitID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"parents\"},
+                    {\"columnName\": \"parent\"},
+                    {\"columnName\": \"uuid\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"parentOrgID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"org-unit/\\\" + getValue(\\\"uuid\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"parents\\\"},{\\\"columnName\\\":\\\"parent\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"parents\\\"},{\\\"columnName\\\":\\\"parent\\\"},{\\\"columnName\\\":\\\"parentOrgID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://localhost:8080/source/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"name\"},
+                    {\"columnName\": \"labelDE\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Organization\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Organization1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"foaf:Organization1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:string\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"de\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"labelDE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"labelDE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"period-ID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeInterval\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeInterval1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeInterval\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeInterval1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:DateTimeInterval1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"period-ID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"period-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"endDate\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:DateTimeValue2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"startDate-ID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:DateTimeValue1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate-ID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"endDate-ID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://vivoweb.org/ontology/core#DateTimeValue2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"vivo:DateTimeValue2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate-ID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"startDate\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://vivoweb.org/ontology/core#dateTime\",
+                    \"DomainLabel\": \"vivo:DateTimeValue1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"startDate\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"period\"},
+                    {\"columnName\": \"endDate\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"DomainId\": \"http://vivoweb.org/ontology/core#DateTimeValue2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://vivoweb.org/ontology/core#dateTime\",
+                    \"DomainLabel\": \"vivo:DateTimeValue2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"period\\\"},{\\\"columnName\\\":\\\"endDate\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"parents\"},
+                    {\"columnName\": \"parent\"},
+                    {\"columnName\": \"uuid\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Organization\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Organization2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Organization\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Organization2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Organization2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"parents\\\"},{\\\"columnName\\\":\\\"parent\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"parents\\\"},{\\\"columnName\\\":\\\"parent\\\"},{\\\"columnName\\\":\\\"uuid\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"orgUnitID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Organization\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Organization1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Organization\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Organization1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Organization1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"orgUnitID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"orgUnitID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"result\"},
+                    {\"columnName\": \"organisationalUnit\"},
+                    {\"columnName\": \"parents\"},
+                    {\"columnName\": \"parent\"},
+                    {\"columnName\": \"parentOrgID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Organization\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Organization2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Organization\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Organization2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Organization2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"parents\\\"},{\\\"columnName\\\":\\\"parent\\\"},{\\\"columnName\\\":\\\"parentOrgID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"result\\\"},{\\\"columnName\\\":\\\"organisationalUnit\\\"},{\\\"columnName\\\":\\\"parents\\\"},{\\\"columnName\\\":\\\"parent\\\"},{\\\"columnName\\\":\\\"parentOrgID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#DateTimeValue1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#start\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"edgeSourceId\": \"http://vivoweb.org/ontology/core#DateTimeInterval1\",
+                    \"edgeSourceUri\": \"http://vivoweb.org/ontology/core#DateTimeInterval\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#DateTimeValue2\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#end\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#DateTimeValue\",
+                    \"edgeSourceId\": \"http://vivoweb.org/ontology/core#DateTimeInterval1\",
+                    \"edgeSourceUri\": \"http://vivoweb.org/ontology/core#DateTimeInterval\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://vivoweb.org/ontology/core#DateTimeInterval1\",
+                    \"edgeId\": \"http://vivoweb.org/ontology/core#dateTimeInterval\",
+                    \"edgeTargetUri\": \"http://vivoweb.org/ontology/core#DateTimeInterval\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Organization1\",
+                    \"edgeSourceUri\": \"http://xmlns.com/foaf/0.1/Organization\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Organization2\",
+                    \"edgeId\": \"http://purl.obolibrary.org/obo/RO_0000056\",
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Organization\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Organization1\",
+                    \"edgeSourceUri\": \"http://xmlns.com/foaf/0.1/Organization\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 a rr:TriplesMap .
+
+_:node1c3iqh1qrx1 km-dev:hasTriplesMap km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 .
+
+km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx2 rr:tableName "organisational-units.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasLogicalTable _:node1c3iqh1qrx2 .
+
+km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 rr:logicalTable _:node1c3iqh1qrx2 ;
+	rr:subjectMap _:node1c3iqh1qrx3 .
+
+_:node1c3iqh1qrx1 km-dev:hasSubjectMap _:node1c3iqh1qrx3 .
+
+_:node1c3iqh1qrx3 km-dev:isPartOfMapping _:node1c3iqh1qrx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#DateTimeInterval1" ;
+	rr:class vivo:DateTimeInterval ;
+	rr:template "{[\"result\",\"organisationalUnit\",\"period\",\"startDate\"]}_{[\"result\",\"organisationalUnit\",\"period\",\"endDate\"]}" .
+
+km-dev:PredicateObjectMap_10c9b6f1-b300-49a3-884a-998a9cae4a84 rr:predicate vivo:end .
+
+km-dev:RefObjectMap_6df1d881-b38c-434b-8b0b-2f87f68c3d85 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_acc4d080-0912-4a52-834f-5b5e1250e9fb ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap km-dev:RefObjectMap_6df1d881-b38c-434b-8b0b-2f87f68c3d85 .
+
+km-dev:PredicateObjectMap_10c9b6f1-b300-49a3-884a-998a9cae4a84 rr:objectMap km-dev:RefObjectMap_6df1d881-b38c-434b-8b0b-2f87f68c3d85 .
+
+km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 rr:predicateObjectMap km-dev:PredicateObjectMap_10c9b6f1-b300-49a3-884a-998a9cae4a84 .
+
+km-dev:PredicateObjectMap_10c9b6f1-b300-49a3-884a-998a9cae4a84 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_10c9b6f1-b300-49a3-884a-998a9cae4a84 .
+
+km-dev:PredicateObjectMap_f009524f-896f-441e-8b47-4ccff303fcbd rr:predicate vivo:start .
+
+km-dev:RefObjectMap_2f9009f0-ea2a-48bb-beab-b50a23ddd190 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9ec08269-dbb0-41b1-b324-94882a765b88 ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap km-dev:RefObjectMap_2f9009f0-ea2a-48bb-beab-b50a23ddd190 .
+
+km-dev:PredicateObjectMap_f009524f-896f-441e-8b47-4ccff303fcbd rr:objectMap km-dev:RefObjectMap_2f9009f0-ea2a-48bb-beab-b50a23ddd190 .
+
+km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 rr:predicateObjectMap km-dev:PredicateObjectMap_f009524f-896f-441e-8b47-4ccff303fcbd .
+
+km-dev:PredicateObjectMap_f009524f-896f-441e-8b47-4ccff303fcbd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f009524f-896f-441e-8b47-4ccff303fcbd .
+
+km-dev:TriplesMap_acc4d080-0912-4a52-834f-5b5e1250e9fb a rr:TriplesMap .
+
+_:node1c3iqh1qrx1 km-dev:hasTriplesMap km-dev:TriplesMap_acc4d080-0912-4a52-834f-5b5e1250e9fb .
+
+km-dev:TriplesMap_acc4d080-0912-4a52-834f-5b5e1250e9fb km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx4 rr:tableName "organisational-units.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasLogicalTable _:node1c3iqh1qrx4 .
+
+km-dev:TriplesMap_acc4d080-0912-4a52-834f-5b5e1250e9fb rr:logicalTable _:node1c3iqh1qrx4 ;
+	rr:subjectMap _:node1c3iqh1qrx5 .
+
+_:node1c3iqh1qrx1 km-dev:hasSubjectMap _:node1c3iqh1qrx5 .
+
+_:node1c3iqh1qrx5 km-dev:isPartOfMapping _:node1c3iqh1qrx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#DateTimeValue2" ;
+	rr:class vivo:DateTimeValue ;
+	rr:template "{[\"result\",\"organisationalUnit\",\"period\",\"endDate\"]}" .
+
+km-dev:PredicateObjectMap_4b31cfcd-1f91-4049-a801-8018e187299b rr:predicate vivo:dateTime .
+
+_:node1c3iqh1qrx6 rr:column "[\"result\",\"organisationalUnit\",\"period\",\"endDate\"]" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap _:node1c3iqh1qrx6 .
+
+km-dev:PredicateObjectMap_4b31cfcd-1f91-4049-a801-8018e187299b rr:objectMap _:node1c3iqh1qrx6 .
+
+km-dev:TriplesMap_acc4d080-0912-4a52-834f-5b5e1250e9fb rr:predicateObjectMap km-dev:PredicateObjectMap_4b31cfcd-1f91-4049-a801-8018e187299b .
+
+km-dev:PredicateObjectMap_4b31cfcd-1f91-4049-a801-8018e187299b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4b31cfcd-1f91-4049-a801-8018e187299b .
+
+km-dev:TriplesMap_2f510e0f-5f01-4dd6-82e0-135b1d8199e8 a rr:TriplesMap .
+
+_:node1c3iqh1qrx1 km-dev:hasTriplesMap km-dev:TriplesMap_2f510e0f-5f01-4dd6-82e0-135b1d8199e8 .
+
+km-dev:TriplesMap_2f510e0f-5f01-4dd6-82e0-135b1d8199e8 km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx7 rr:tableName "organisational-units.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasLogicalTable _:node1c3iqh1qrx7 .
+
+km-dev:TriplesMap_2f510e0f-5f01-4dd6-82e0-135b1d8199e8 rr:logicalTable _:node1c3iqh1qrx7 ;
+	rr:subjectMap _:node1c3iqh1qrx8 .
+
+_:node1c3iqh1qrx1 km-dev:hasSubjectMap _:node1c3iqh1qrx8 .
+
+_:node1c3iqh1qrx8 km-dev:isPartOfMapping _:node1c3iqh1qrx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Organization2" ;
+	rr:class foaf:Organization ;
+	rr:template "org-unit/{[\"result\",\"organisationalUnit\",\"parents\",\"parent\",\"uuid\"]}" .
+
+km-dev:TriplesMap_9ec08269-dbb0-41b1-b324-94882a765b88 a rr:TriplesMap .
+
+_:node1c3iqh1qrx1 km-dev:hasTriplesMap km-dev:TriplesMap_9ec08269-dbb0-41b1-b324-94882a765b88 .
+
+km-dev:TriplesMap_9ec08269-dbb0-41b1-b324-94882a765b88 km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx9 rr:tableName "organisational-units.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasLogicalTable _:node1c3iqh1qrx9 .
+
+km-dev:TriplesMap_9ec08269-dbb0-41b1-b324-94882a765b88 rr:logicalTable _:node1c3iqh1qrx9 ;
+	rr:subjectMap _:node1c3iqh1qrx10 .
+
+_:node1c3iqh1qrx1 km-dev:hasSubjectMap _:node1c3iqh1qrx10 .
+
+_:node1c3iqh1qrx10 km-dev:isPartOfMapping _:node1c3iqh1qrx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vivoweb.org/ontology/core#DateTimeValue1" ;
+	rr:class vivo:DateTimeValue ;
+	rr:template "{[\"result\",\"organisationalUnit\",\"period\",\"startDate\"]}" .
+
+km-dev:PredicateObjectMap_c3fd5810-293e-46e7-9532-6d7cf3049a23 rr:predicate vivo:dateTime .
+
+_:node1c3iqh1qrx11 rr:column "[\"result\",\"organisationalUnit\",\"period\",\"startDate\"]" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap _:node1c3iqh1qrx11 .
+
+km-dev:PredicateObjectMap_c3fd5810-293e-46e7-9532-6d7cf3049a23 rr:objectMap _:node1c3iqh1qrx11 .
+
+km-dev:TriplesMap_9ec08269-dbb0-41b1-b324-94882a765b88 rr:predicateObjectMap km-dev:PredicateObjectMap_c3fd5810-293e-46e7-9532-6d7cf3049a23 .
+
+km-dev:PredicateObjectMap_c3fd5810-293e-46e7-9532-6d7cf3049a23 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c3fd5810-293e-46e7-9532-6d7cf3049a23 .
+
+km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb a rr:TriplesMap .
+
+_:node1c3iqh1qrx1 km-dev:hasTriplesMap km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb .
+
+km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx12 rr:tableName "organisational-units.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasLogicalTable _:node1c3iqh1qrx12 .
+
+km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb rr:logicalTable _:node1c3iqh1qrx12 ;
+	rr:subjectMap _:node1c3iqh1qrx13 .
+
+_:node1c3iqh1qrx1 km-dev:hasSubjectMap _:node1c3iqh1qrx13 .
+
+_:node1c3iqh1qrx13 km-dev:isPartOfMapping _:node1c3iqh1qrx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Organization1" ;
+	rr:class foaf:Organization ;
+	rr:template "org-unit/{[\"result\",\"organisationalUnit\",\"uuid\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_c7a02183-dd70-463d-aa8c-d8e565fdcac8 rr:predicate obo:RO_0000056 .
+
+km-dev:RefObjectMap_6bc9f7e5-3852-40cd-be60-d6a929052a1e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2f510e0f-5f01-4dd6-82e0-135b1d8199e8 ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap km-dev:RefObjectMap_6bc9f7e5-3852-40cd-be60-d6a929052a1e .
+
+km-dev:PredicateObjectMap_c7a02183-dd70-463d-aa8c-d8e565fdcac8 rr:objectMap km-dev:RefObjectMap_6bc9f7e5-3852-40cd-be60-d6a929052a1e .
+
+km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb rr:predicateObjectMap km-dev:PredicateObjectMap_c7a02183-dd70-463d-aa8c-d8e565fdcac8 .
+
+km-dev:PredicateObjectMap_c7a02183-dd70-463d-aa8c-d8e565fdcac8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c7a02183-dd70-463d-aa8c-d8e565fdcac8 .
+
+km-dev:PredicateObjectMap_13aeda6d-cef7-4a11-a105-57a6251367a4 rr:predicate rdfs:label .
+
+_:node1c3iqh1qrx14 rr:column "[\"result\",\"organisationalUnit\",\"name\",\"labelDE\"]" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	rr:language "de" ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap _:node1c3iqh1qrx14 .
+
+km-dev:PredicateObjectMap_13aeda6d-cef7-4a11-a105-57a6251367a4 rr:objectMap _:node1c3iqh1qrx14 .
+
+km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb rr:predicateObjectMap km-dev:PredicateObjectMap_13aeda6d-cef7-4a11-a105-57a6251367a4 .
+
+km-dev:PredicateObjectMap_13aeda6d-cef7-4a11-a105-57a6251367a4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_13aeda6d-cef7-4a11-a105-57a6251367a4 .
+
+km-dev:PredicateObjectMap_a371f003-c4d2-461d-95e6-f2e04ad62841 rr:predicate vivo:dateTimeInterval .
+
+km-dev:RefObjectMap_140bf00c-2fe3-4a8d-96f8-04370387c9a2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e25c1dd4-c0b8-4ba7-a349-e7c11d78ebe8 ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasObjectMap km-dev:RefObjectMap_140bf00c-2fe3-4a8d-96f8-04370387c9a2 .
+
+km-dev:PredicateObjectMap_a371f003-c4d2-461d-95e6-f2e04ad62841 rr:objectMap km-dev:RefObjectMap_140bf00c-2fe3-4a8d-96f8-04370387c9a2 .
+
+km-dev:TriplesMap_0cafad64-2d0b-491d-8237-9f4550ee9dfb rr:predicateObjectMap km-dev:PredicateObjectMap_a371f003-c4d2-461d-95e6-f2e04ad62841 .
+
+km-dev:PredicateObjectMap_a371f003-c4d2-461d-95e6-f2e04ad62841 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c3iqh1qrx1 .
+
+_:node1c3iqh1qrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a371f003-c4d2-461d-95e6-f2e04ad62841 .
