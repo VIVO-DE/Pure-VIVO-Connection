@@ -2,10 +2,10 @@
 
 ### CONFIG ####
 VIVO_URL="http://127.0.0.1:8080/vivo/"
-VIVO_ADMIN_USERNAME="vivo_root@mydomain.edu"
-VIVO_ADMIN_PASSWORD="password"
+VIVO_ADMIN_USERNAME="[INSERT_HERE]"
+VIVO_ADMIN_PASSWORD="[INSERT_HERE]"
 PURE_REST_URL="http://127.0.0.1:8080/ws/api/59/"
-PURE_API_KEY="aeb2enbf-ab34-123a-8193-da20960bc2a2"
+PURE_API_KEY="[INSERT_HERE]"
 VIVO_BASE_URI="http://fis.tu-dresden.de/vivo/"
 KARMA_WS_URL="http://127.0.0.1:8080/web-services-rdf/"
 
